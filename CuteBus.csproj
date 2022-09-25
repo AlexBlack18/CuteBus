@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B81D156D-9957-4B6B-95F2-459DA5B95A5F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CuteBus</RootNamespace>
+    <AssemblyName>CuteBus</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About_Form.Designer.cs">
+      <DependentUpon>About_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\conductor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\conductor.Designer.cs">
+      <DependentUpon>conductor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\conductorEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\conductorEdit.Designer.cs">
+      <DependentUpon>conductorEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\den_oborot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\den_oborot.Designer.cs">
+      <DependentUpon>den_oborot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\den_oborotEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\den_oborotEdit.Designer.cs">
+      <DependentUpon>den_oborotEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\passagiropotoki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\passagiropotoki.Designer.cs">
+      <DependentUpon>passagiropotoki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\passagiropotokiEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\passagiropotokiEdit.Designer.cs">
+      <DependentUpon>passagiropotokiEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\premia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\premia.Designer.cs">
+      <DependentUpon>premia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\premiaEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\premiaEdit.Designer.cs">
+      <DependentUpon>premiaEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\voditelEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\voditelEdit.Designer.cs">
+      <DependentUpon>voditelEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\voditeli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\voditeli.Designer.cs">
+      <DependentUpon>voditeli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\zagrugenost_napr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\zagrugenost_napr.Designer.cs">
+      <DependentUpon>zagrugenost_napr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\zagrugenost_naprEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\zagrugenost_naprEdit.Designer.cs">
+      <DependentUpon>zagrugenost_naprEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\zagrugenost_rey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\zagrugenost_rey.Designer.cs">
+      <DependentUpon>zagrugenost_rey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\zagrugenost_reyEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\zagrugenost_reyEdit.Designer.cs">
+      <DependentUpon>zagrugenost_reyEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\zarplata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\zarplata.Designer.cs">
+      <DependentUpon>zarplata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\zarplataEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\zarplataEdit.Designer.cs">
+      <DependentUpon>zarplataEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Auth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Auth.Designer.cs">
+      <DependentUpon>Auth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conductor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conductor.Designer.cs">
+      <DependentUpon>Conductor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cond\den_oborot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cond\den_oborot.Designer.cs">
+      <DependentUpon>den_oborot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cond\den_oborotEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cond\den_oborotEdit.Designer.cs">
+      <DependentUpon>den_oborotEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cond\passagirpot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cond\passagirpot.Designer.cs">
+      <DependentUpon>passagirpot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cond\passagirpotEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cond\passagirpotEdit.Designer.cs">
+      <DependentUpon>passagirpotEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cond\zagr_rey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cond\zagr_rey.Designer.cs">
+      <DependentUpon>zagr_rey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cond\zag_napr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cond\zag_napr.Designer.cs">
+      <DependentUpon>zag_napr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cond\zag_naprEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cond\zag_naprEdit.Designer.cs">
+      <DependentUpon>zag_naprEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cond\zag_reyEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cond\zag_reyEdit.Designer.cs">
+      <DependentUpon>zag_reyEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CuteBusDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CuteBusDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Exit_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exit_Form.Designer.cs">
+      <DependentUpon>Exit_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Goodbye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Goodbye.Designer.cs">
+      <DependentUpon>Goodbye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hello.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hello.Designer.cs">
+      <DependentUpon>Hello.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginError.Designer.cs">
+      <DependentUpon>LoginError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageAuth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageAuth.Designer.cs">
+      <DependentUpon>MessageAuth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageRemove.Designer.cs">
+      <DependentUpon>MessageRemove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vodila.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vodila.Designer.cs">
+      <DependentUpon>Vodila.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vod\Zagr_napr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vod\Zagr_napr.Designer.cs">
+      <DependentUpon>Zagr_napr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vod\Zagr_napr_table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vod\Zagr_napr_table.Designer.cs">
+      <DependentUpon>Zagr_napr_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vod\Zagr_reysov.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vod\Zagr_reysov.Designer.cs">
+      <DependentUpon>Zagr_reysov.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vod\Zagr_reysov_table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vod\Zagr_reysov_table.Designer.cs">
+      <DependentUpon>Zagr_reysov_table.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About_Form.resx">
+      <DependentUpon>About_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\conductor.resx">
+      <DependentUpon>conductor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\conductorEdit.resx">
+      <DependentUpon>conductorEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\den_oborot.resx">
+      <DependentUpon>den_oborot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\den_oborotEdit.resx">
+      <DependentUpon>den_oborotEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\passagiropotoki.resx">
+      <DependentUpon>passagiropotoki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\passagiropotokiEdit.resx">
+      <DependentUpon>passagiropotokiEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\premia.resx">
+      <DependentUpon>premia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\premiaEdit.resx">
+      <DependentUpon>premiaEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\voditelEdit.resx">
+      <DependentUpon>voditelEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\voditeli.resx">
+      <DependentUpon>voditeli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\zagrugenost_napr.resx">
+      <DependentUpon>zagrugenost_napr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\zagrugenost_naprEdit.resx">
+      <DependentUpon>zagrugenost_naprEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\zagrugenost_rey.resx">
+      <DependentUpon>zagrugenost_rey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\zagrugenost_reyEdit.resx">
+      <DependentUpon>zagrugenost_reyEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\zarplata.resx">
+      <DependentUpon>zarplata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\zarplataEdit.resx">
+      <DependentUpon>zarplataEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Auth.resx">
+      <DependentUpon>Auth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conductor.resx">
+      <DependentUpon>Conductor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cond\den_oborot.resx">
+      <DependentUpon>den_oborot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cond\den_oborotEdit.resx">
+      <DependentUpon>den_oborotEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cond\passagirpot.resx">
+      <DependentUpon>passagirpot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cond\passagirpotEdit.resx">
+      <DependentUpon>passagirpotEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cond\zagr_rey.resx">
+      <DependentUpon>zagr_rey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cond\zag_napr.resx">
+      <DependentUpon>zag_napr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cond\zag_naprEdit.resx">
+      <DependentUpon>zag_naprEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cond\zag_reyEdit.resx">
+      <DependentUpon>zag_reyEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exit_Form.resx">
+      <DependentUpon>Exit_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Goodbye.resx">
+      <DependentUpon>Goodbye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hello.resx">
+      <DependentUpon>Hello.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginError.resx">
+      <DependentUpon>LoginError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageAuth.resx">
+      <DependentUpon>MessageAuth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageRemove.resx">
+      <DependentUpon>MessageRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Vodila.resx">
+      <DependentUpon>Vodila.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vod\Zagr_napr.resx">
+      <DependentUpon>Zagr_napr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vod\Zagr_napr_table.resx">
+      <DependentUpon>Zagr_napr_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vod\Zagr_reysov.resx">
+      <DependentUpon>Zagr_reysov.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vod\Zagr_reysov_table.resx">
+      <DependentUpon>Zagr_reysov_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="CuteBusDataSet.xsc">
+      <DependentUpon>CuteBusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CuteBusDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CuteBusDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CuteBusDataSet.xss">
+      <DependentUpon>CuteBusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_автобус_preview_rev_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
